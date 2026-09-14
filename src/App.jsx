@@ -221,7 +221,7 @@ export default function App() {
             }}
           />
 
-          <button onClick={searchMovies}>Найти</button>
+          <button onClick={searchMovies}>Найти фцв</button>
           <button onClick={clearSearch}>Очистить</button>
 
           {loading && <p>Загрузка...</p>}
