@@ -1,6 +1,7 @@
 export default function MovieCard({ movie, showMovie }) {
   return (
-    <div>
+    <div className="cartMovie">
+      <div className="cartMovie-info"> 
       <h2>{movie.title}</h2>
 
       {movie.poster_path && (
@@ -11,8 +12,10 @@ export default function MovieCard({ movie, showMovie }) {
       )}
 
       <p>Рейтинг: {movie.vote_average.toFixed(1)}</p>
-
-      <button onClick={() => showMovie(movie.id)}>Подробнее</button>
+      </div>
+      <div className="podrobnee">
+        <button onClick={() => showMovie(movie.id)} className="buttonCartMovie">Подробнее</button>
+      </div>
     </div>
   );
 }

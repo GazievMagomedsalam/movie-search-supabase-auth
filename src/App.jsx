@@ -207,9 +207,10 @@ export default function App() {
             <button onClick={signOut}>Выйти</button>
           </div>
 
-          <h1>Поиск фильмов - CI WORK</h1>
+          <h1>Поиск фильмов</h1>
 
-          <input
+          <div className="movie-content">
+            <input
             type="text"
             placeholder="Например: Интерстеллар"
             value={search}
@@ -220,9 +221,9 @@ export default function App() {
               }
             }}
           />
-
-          <button onClick={searchMovies}>Найти фцв</button>
+          <button onClick={searchMovies}>Найти </button>
           <button onClick={clearSearch}>Очистить</button>
+          </div>
 
           {loading && <p>Загрузка...</p>}
 
