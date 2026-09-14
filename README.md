@@ -1,7 +1,5 @@
 # Movie Search + Supabase Auth
 
-Итоговый учебный проект без избранного.
-
 ## Запуск
 
 1. Скопируй `.env.example` в `.env`.
