@@ -3,7 +3,9 @@ import { supabase } from "./supabase.js";
 import AuthForm from "./components/AuthForm.jsx";
 import MovieList from "./components/MovieList.jsx";
 import MovieDetails from "./components/MovieDetails.jsx";
+import { getTotalPages } from "./utils.js";
 import "./App.css";
+
 
 const TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 
@@ -29,7 +31,7 @@ export default function App() {
 
   const currentMovies = movies.slice(startIndex, endIndex);
 
-  const totalPages = Math.ceil(movies.length / moviesPerPage);
+  const totalPages = getTotalPages(movies.length, moviesPerPage);
 
   async function signUp() {
     setAuthMessage("");
