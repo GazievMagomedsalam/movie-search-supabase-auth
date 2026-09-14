@@ -205,7 +205,7 @@ export default function App() {
             <button onClick={signOut}>Выйти</button>
           </div>
 
-          <h1>Поиск фильмов</h1>
+          <h1>Поиск фильмов - CI WORK</h1>
 
           <input
             type="text"
