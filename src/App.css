@@ -129,3 +129,18 @@ section iframe {
   width: 12rem;
   height: 4rem;
 }
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0 24px;
+}
+
+.filters input,
+.filters select {
+  width: auto;
+  flex: 1;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+}
