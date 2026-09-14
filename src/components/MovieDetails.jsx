@@ -1,6 +1,6 @@
 export default function MovieDetails({ selectedMovie, trailer, closeMovie }) {
   return (
-    <section>
+    <section className="section-movie">
       <h2>{selectedMovie.title}</h2>
 
       {selectedMovie.poster_path && (
@@ -26,7 +26,7 @@ export default function MovieDetails({ selectedMovie, trailer, closeMovie }) {
             allowFullScreen
           />
 
-          <button onClick={closeMovie}>Закрыть</button>
+          <button onClick={closeMovie} className="buttonClose">Закрыть</button>
         </div>
       )}
     </section>

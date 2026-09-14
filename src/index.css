@@ -15,3 +15,13 @@ button,
 input {
   font: inherit;
 }
+
+
+.movie-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-movie {
+}
